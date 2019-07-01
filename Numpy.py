@@ -18,11 +18,14 @@ for t in taxi_data:
 
 taxi = np.array(converted_taxi_list)
 
+# finding the size of the ndarray
 taxi_shape = taxi.shape
 print(taxi_shape)
+# getting the subset of data using indexing. Since our array is 2d we are passing 2 vector for that.
 rows_391_to_500 = taxi[391:501]
 row_21_column_5 = taxi[21, 5]
 
+# getting multiple column of data at once
 col = [1, 4, 7]
 columns_1_4_7 = taxi[:, col]
 
